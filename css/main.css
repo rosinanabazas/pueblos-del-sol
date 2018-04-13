@@ -194,7 +194,7 @@ small {
 
 .members h4 {
   font-size: 1.7em;
-  margin-top: .5em;
+  margin: 1em 0;
 }
 
 .members h2,
@@ -283,9 +283,6 @@ footer p { color: #4c4a4a; }
   background: url('../img/fotos-bg.jpg') no-repeat fixed!important;
   background-size: cover!important;
 }
-
-
-
 
 /* ==========================================================================
    Helper classes
