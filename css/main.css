@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+/*Base styles */
 
 html {
   color: #222;
@@ -10,8 +8,37 @@ html {
   font-weight: 300;
 }
 
+h1,
+h2,
+h3 {
+  font-family: 'IBM Plex Serif', serif;
+  font-style: italic;
+}
+
+h1 {
+  color: white;
+  font-size: 4em;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 0;
+}
+
 p { font-size: 1.3em; }
 a { text-decoration: none; }
+
+.custom-btn {
+  border-radius: 3em;
+  background-color: purple;
+  color: white;
+  display: inline-block;
+  padding: .7em 5em;
+  margin-top: 1em;
+}
 
 /*Nav Bar*/
 
@@ -92,11 +119,10 @@ a.logo, a:visited.logo {
 /* Hero Header */
 
 .hero {
-  position: relative;
-  background-attachment: fixed;
-  text-align: center;
   background: url('../img/bg-imge.jpg') no-repeat fixed!important;
   background-size: cover!important;
+  position: relative;
+  text-align: center;
 }
 
 .hero p {
@@ -107,50 +133,17 @@ a.logo, a:visited.logo {
   width: 57%;
 }
 
-p.subtitle {
-  font-size: 1.5em;
-}
-
-.hero-body h1 {
-  color: white;
-  font-size: 4em;
-  text-align: center;
-  margin: 0;
-}
+p.subtitle { font-size: 1.5em; }
 
 .hero-body {
-  margin: 0 auto;
-  padding-top: 100px;
-  min-height: 250px;
   background: rgba(0, 0, 0, 0.7);
-  overflow: hidden;
   height: 100%;
+  margin: 0 auto;
+  min-height: 250px;
+  overflow: hidden;
+  padding-top: 100px;
   text-align: center;
   z-index: 2;
-}
-
-/*General styles*/
-
-h1,
-h2,
-h3 {
-  font-family: 'IBM Plex Serif', serif;
-  font-style: italic;
-}
-
-h2 {
-  font-size: 2.5em;
-  text-align: center;
-  margin: 0;
-}
-
-.custom-btn {
-  border-radius: 3em;
-  background-color: purple;
-  color: white;
-  display: inline-block;
-  padding: .7em 5em;
-  margin-top: 1em;
 }
 
 .hero .hero-body { padding: 17% 0; }
@@ -187,6 +180,8 @@ small {
   margin: 1.5em auto 1em;
 }
 
+/*About Us*/
+
 .about-us {
   background-color: black;
   color: white;
@@ -215,6 +210,9 @@ small {
 }
 
 .proposal small { margin-top: 4em; }
+
+/*Flag Section*/
+
 .flag { padding: 10em 0; }
 
 .flag img {
@@ -229,6 +227,8 @@ small {
   text-align: center;
   width: 80%;
 }
+
+/*Contact Section*/
 
 .contact {
   background: url('../img/footer-bg.jpg') black center center no-repeat!important;
@@ -266,14 +266,15 @@ small {
   text-align: center;
 }
 
-.icons img {
-  width: 30px;
-}
+.icons img { width: 30px; }
+
 .mail-to {
   color: white;
   display: block;
   text-align: center;
 }
+
+/*Footer*/
 
 footer {
   background-color: black;
@@ -281,82 +282,10 @@ footer {
   color: #4c4a4a;
 }
 
-.footer a {
-  float: right;
-  color: #4c4a4a!important;
-}
-
 footer p {
   display: inline-block;
   color: #4c4a4a;
 }
-
-/*///// GENERAL SECTION WRAPPER */
-
-.general-wrapper { padding: 10em 4em; }
-
-.videos-view .hero {
-  background: url('../img/videos-bg.jpg') no-repeat fixed!important;
-  background-size: cover!important;
-}
-
-.photos-view .hero {
-  background: url('../img/fotos-bg.jpg') no-repeat fixed!important;
-  background-size: cover!important;
-}
-
-.photos-view .hero-body,
-.videos-view .hero-body { padding: 10% 0; }
-
-.photos-view h1,
-.videos-view h1 { margin-top: 7.5%; }
-
- /*VIDEOS*/
-
- .videos,
- .photos {
-   padding: 10em 0;
-   width: 80%;
-   margin: 0 auto;
- }
-
- .photos img {
-   margin-bottom: 1em;
- }
-
- .videos iframe {
-   margin-bottom: 2em;
-   width: 48%;
-   margin-right: 1em;
-   height: -webkit-fill-available;
- }
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
@@ -368,79 +297,69 @@ footer p {
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
+/*Media queries*/
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+@media only screen and (max-width: 800px) {
+  .menu {
+    position: relative;
+    width: 100%;
+  }
 
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    margin-left: 0px;
+  }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  .menu-items {
+    display: none;
+    width: 100%;
+    margin-top: 80px;
+    opacity: 0.7;
+    background-color: black;
+  }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  .menu-items li {
+    display: block;
+    text-align: center;
+  }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  .show, .hide {
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+  .show { display: inline-block; }
+  .hide { display: none; }
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+  .content h1 {
+    font-size: 35px;
+    margin-top: 130px;
+  }
 
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  #menu:target .show {
+    display: none;
+  }
 
-    /*
-     * Printing Tables
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
+  #menu:target .hide, #menu:target .menu-items {
+    display: inline-block;
+  }
 
-    thead {
-        display: table-header-group;
-    }
+  h1 {
+    font-size: 2.5em;
+  }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+  .hero p {
+    width: 90%;
+  }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+  .hero .hero-body {
+    padding: 35% 0;
+  }
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  .description {
+    padding: 3em;
+  }
 }
