@@ -15,15 +15,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
+  <body class="videos-view">
     <nav class="fixed-nav-bar">
       <div id="menu" class="menu">
-        <a class="logo" href="/">Patria Grande</a>
+        <a class="logo" href="index.html">Patria Grande</a>
         <a class="show" href="#menu"><img src="img/menu.svg" alt="Menu icon"></a><a class="hide" href="#hidemenu"><img src="img/close.svg" alt="Close icon"></a>
         <ul class="menu-items">
-          <li><a href="#description">Sobre el Tributo</a></li>
-          <li><a href="#proposal">Propuesta Artística</a></li>
-          <li><a href="www.bandcamp.com">Música</a></li>
+          <li><a href="index.html#description">Sobre el Tributo</a></li>
+          <li><a href="index.html#proposal">Propuesta Artística</a></li>
+          <li><a href="https://bandcamp.com/" target="_blank">Música</a></li>
           <li><a href="videos.html">Videos</a></li>
           <li><a href="fotos.html">Fotos</a></li>
           <li><a href="#contacto">Contacto</a></li>
@@ -39,6 +39,13 @@
       </div>
     </section>
 
+    <section class="videos">
+      <iframe src="https://www.youtube.com/embed/S98j65WtjXQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/vBMh3LVjftI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/MPmJWIC4-YE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/04kf35N1h0Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </section>
+
     <section id="contact" class="contact hero is-medium">
       <div class="contact-container">
         <small>Tributo a los pueblos del sol</small>
@@ -50,19 +57,13 @@
         </p>
         <div class="icons">
           <a>
-            <span class="icon">
-              <i class="fab fa-instagram"></i>
-            </span>
+            <img src="img/youtube-icon.svg">
           </a>
           <a>
-            <span class="icon">
-              <i class="fab fa-facebook-f"></i>
-            </span>
+            <img src="img/facebook-icon.svg">
           </a>
           <a>
-            <span class="icon">
-              <i class="fab fa-youtube"></i>
-            </span>
+            <img src="img/twitter-icon.svg">
           </a>
         </div>
         <a href="mailto:contenidoslatinoamerica@gmail.com?subject=ContactoWeb" class="mail-to">contenidoslatinoamerica@gmail.com</a>
@@ -70,11 +71,8 @@
     </section>
 
     <footer>
-      <div class="columns">
-        <div class="column has-text-centered">
-          <p>Patria Grande Logo</p>
-        </div>
-      </div>
+      <p>Patria Grande Logo</p>
+      <!-- <a href="tel:0059896369568">Tel: (00598) 96 369 568</a> -->
     </footer>
 
     <!-- <script src="js/vendor/modernizr-3.5.0.min.js"></script>
