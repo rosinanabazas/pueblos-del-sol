@@ -31,6 +31,12 @@ h2 {
 p { font-size: 1.3em; }
 a { text-decoration: none; }
 
+.hero-body h2 {
+  color: white;
+  font-size: 1.5em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 .custom-btn {
   border-radius: 3em;
   background-color: purple;
@@ -247,9 +253,10 @@ small {
 }
 
 .contact p {
+  font-size: 1.1em;
   margin: 0 auto;
   text-align: center;
-  width: 70%;
+  width: 60%;
 }
 
 .icons {
@@ -269,6 +276,7 @@ small {
 .icons img { width: 30px; }
 
 .mail-to {
+  font-size: 1.1em;
   color: white;
   display: block;
   margin-top: 20px;
