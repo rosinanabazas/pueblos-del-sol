@@ -11,7 +11,7 @@ html {
 h1,
 h2,
 h3 {
-  font-family: 'IBM Plex Serif', serif;
+  font-family: 'Courgette', cursive;
   font-style: italic;
 }
 
@@ -31,11 +31,11 @@ h2 {
 p { font-size: 1.3em; }
 a { text-decoration: none; }
 
-.hero-body h2 {
+/*.hero-body h2 {
   color: white;
-  font-size: 1.5em;
+  font-size: 1em;
   font-family: 'Source Sans Pro', sans-serif;
-}
+}*/
 
 .custom-btn {
   border-radius: 3em;
