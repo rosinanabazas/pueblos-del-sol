@@ -188,10 +188,22 @@ small {
 
 /*About Us*/
 
+.proposal {
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  height: 100%;
+  padding: 10em 0;
+  z-index: 2;
+}
+
+
 .about-us {
-  background-color: black;
+  background: url('../img/about-us-bg.jpg') black center center no-repeat!important;
+  background-size: cover!important;
   color: white;
-  padding: 10rem 5rem;
+  overflow: hidden;
+  height: 100%;
+  background-color: red;
 }
 
 .about-us small {
@@ -203,6 +215,8 @@ small {
   font-size: 1.7em;
   margin: 1em 0 0.2em;
 }
+
+.proposal { padding: 10em 5em; }
 
 .members h2,
 .proposal h2 {
