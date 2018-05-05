@@ -12,6 +12,8 @@
   background-size: cover!important;
 }
 
+.gallery { padding: 10%; }
+
 .photos-view .hero-body,
 .videos-view .hero-body { padding: 10% 0; }
 
