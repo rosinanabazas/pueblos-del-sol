@@ -296,23 +296,6 @@ small {
   text-align: center;
 }
 
-/*Footer*/
-
-footer {
-  background-color: black;
-  padding: 2em;
-  color: #4c4a4a;
-}
-
-footer p {
-  display: inline-block;
-  color: #4c4a4a;
-}
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
@@ -337,8 +320,7 @@ footer p {
   .menu-items {
     display: none;
     width: 100%;
-    margin-top: 80px;
-    opacity: 0.7;
+    margin-top: 60px;
     background-color: black;
   }
 
@@ -384,4 +366,16 @@ footer p {
   .description {
     padding: 3em;
   }
+
+  .videos,
+  .photos {
+    padding: 5em 0 !important;
+  }
+
+  .videos iframe {
+    width: 100% !important;
+  }
+
+  .photos-view h1,
+  .videos-view h1 { margin-top: 25% !important; }
 }
